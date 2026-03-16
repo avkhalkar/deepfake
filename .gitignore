@@ -1,0 +1,85 @@
+# ========================
+#  Python
+# ========================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+*.egg
+dist/
+build/
+*.whl
+
+# ========================
+#  Virtual Environment
+# ========================
+.venv/
+venv/
+ENV/
+env/
+
+# ========================
+#  IDE & Editor
+# ========================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.settings/
+
+# ========================
+#  OS Files
+# ========================
+Thumbs.db
+Desktop.ini
+.DS_Store
+*.lnk
+
+# ========================
+#  Datasets (large binary files)
+# ========================
+datasets/
+
+# ========================
+#  Model Weights (large binary files)
+# ========================
+models/*.dat
+models/*.pth
+models/*.pt
+models/*.onnx
+models/*.h5
+
+# ========================
+#  Pipeline Outputs (generated at runtime)
+# ========================
+test_output/
+test_output_*/
+
+# ========================
+#  Logs & Reports (generated at runtime)
+# ========================
+pipeline_run_logs/
+test_logs/
+visual_test_logs/
+
+# ========================
+#  Pytest Cache
+# ========================
+.pytest_cache/
+htmlcov/
+.coverage
+
+# ========================
+#  Jupyter Notebooks
+# ========================
+.ipynb_checkpoints/
+
+# ========================
+#  Misc
+# ========================
+*.log
+*.csv
+*.bak
