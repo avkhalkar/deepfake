@@ -73,9 +73,9 @@ deepfake/
 │       └── test_output_files.py
 │
 ├── datasets/                     # Dataset root (not tracked in git)
-│   ├── celeb_df/
+│   ├── Celeb-DF-v2/
 │   ├── dfdc/
-│   ├── deeper_forensics/
+│   ├── deeperforensics/
 │   └── face_forensics/
 │
 ├── models/                       # Pre-trained model weights
@@ -85,6 +85,7 @@ deepfake/
 │   └── project_structure.md
 │
 ├── test_output/                  # Extracted .pt files (not tracked)
+├── test_logs/                    # Test run logs (not tracked)
 ├── visual_test_logs/             # Visual validation plots (not tracked)
 ├── pipeline_run_logs/            # Extraction logs (not tracked)
 │
@@ -145,27 +146,31 @@ Place your datasets under the `datasets/` directory following this structure:
 
 ```
 datasets/
-├── celeb_df/           # Celeb-DF-v2
-│   ├── Celeb-real/
-│   ├── Celeb-synthesis/
-│   ├── YouTube-real/
+├── Celeb-DF-v2/                                    # Celeb-DF-v2
+│   ├── Celeb-real/                                # Real Videos
+│   ├── Celeb-synthesis/                           # Deepfake Videos
+│   ├── YouTube-real/                              # Real Videos
 │   └── List_of_testing_videos.txt
-├── dfdc/               # Facebook DFDC
+├── dfdc/                                            # Facebook DFDC
 │   └── train_sample_videos/
 │       ├── metadata.json
 │       └── *.mp4
-├── deeper_forensics/   # DeeperForensics-1.0
-│   ├── source_videos/
-│   ├── manipulated_videos/
+├── deeperforensics/                                 # DeeperForensics-1.0
+│   ├── source_videos_part_03/                     # Source: Real Videos
+│   ├── manipulated_videos_part_01/                # Manipulated: Deepfake Videos
 │   └── lists/
-└── face_forensics/     # FaceForensics++
-    ├── original_sequences/youtube/c23/videos/
-    ├── manipulated_sequences/
-    │   ├── Deepfakes/c23/videos/
-    │   ├── FaceSwap/c23/videos/
-    │   ├── Face2Face/c23/videos/
-    │   └── NeuralTextures/c23/videos/
-    └── splits/
+│       ├── manipulated_videos_distortions_meta/     # Distortion metadata .txt files
+│       ├── manipulated_videos_lists/                # Video list manifests .txt files
+│       ├── source_videos_lists/                     # Source video lists .txt files
+│       └── splits/                                  # train.txt, val.txt, test.txt
+└── face_forensics/                                  # FaceForensics++
+    ├── original-sequences-c23-videos/               # Real Videos
+    ├── manipulated-sequences-Deepfakes-c23-videos/    # Deepfake Videos
+    ├── manipulated-sequences-Face2Face-c23-videos/    # Face2Face Videos
+    ├── manipulated-sequences-FaceShifter-c23-videos/  # FaceShifter Videos
+    ├── manipulated-sequences-FaceSwap-c23-videos/     # FaceSwap Videos
+    ├── manipulated-sequences-NeuralTextures-c23-videos/ # NeuralTextures Videos
+    └── csv/                                           # Metadata files
 ```
 
 ---
