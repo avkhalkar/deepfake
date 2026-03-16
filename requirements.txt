@@ -1,0 +1,32 @@
+# 1 OpenCV – Frame extraction, filtering, image transforms
+opencv-python
+
+# 2 NumPy – Implement filters and matrix kernels
+numpy
+
+# 3 PyTorch – Deep learning framework for CNN models (and tensor processing)
+torch
+torchvision
+torchaudio
+
+# 4 MTCNN / RetinaFace – Face detection and alignment
+mtcnn
+facenet-pytorch
+
+# 5 scikit-image / SciPy – Advanced image filtering
+scikit-image
+scipy
+
+# 6 PyWavelets – Optional wavelet-based residual extraction
+PyWavelets
+
+# 7 dlib – For facial landmarks and alignment (alternative to mediapipe)
+dlib
+mediapipe
+
+# 8 SQLite – Metadata and extraction logging (Built-in to Python)
+# sqlite3 
+
+# Audio & Dataset Management
+librosa            # MFCC and spectral feature extraction
+kaggle             # Dataset downloading via Kaggle API
