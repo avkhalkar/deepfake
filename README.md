@@ -103,7 +103,7 @@ deepfake/
 |---|---|---|---|---|
 | **DFDC** | ~120K | ✅ Yes | Real / Fake | — |
 | **Celeb-DF-v2** | ~6K | ❌ No | Real / Fake | — |
-| **FaceForensics++** | ~5K | ❌ No | Real / Fake | Deepfakes, FaceSwap, Face2Face, NeuralTextures, youtube |
+| **FaceForensics++** | ~5K | ❌ No | Real / Fake | Deepfakes, FaceSwap, Face2Face, NeuralTextures, FaceShifter, Original |
 | **DeeperForensics** | ~60K | ❌ No | Real / Fake | — |
 
 The `DatasetManager` automatically discovers and parses each dataset's unique directory structure and metadata format. It provides:
