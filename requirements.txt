@@ -30,3 +30,9 @@ mediapipe
 # Audio & Dataset Management
 librosa            # MFCC and spectral feature extraction
 kaggle             # Dataset downloading via Kaggle API
+
+# Visualization
+matplotlib         # Plotting for visual testing scripts
+
+# Testing
+pytest             # Unit and integration test framework
